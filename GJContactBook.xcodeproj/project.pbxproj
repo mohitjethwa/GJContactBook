@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA0A98E123A0E10B00822CDF /* GJAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E023A0E10B00822CDF /* GJAPIService.swift */; };
 		AA0A98E323A0E12100822CDF /* GJAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E223A0E12100822CDF /* GJAPIRequest.swift */; };
+		AA0A98E623A0F42700822CDF /* GJContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E523A0F42700822CDF /* GJContact.swift */; };
+		AA0A98E823A0F49300822CDF /* GJNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E723A0F49300822CDF /* GJNetworkManager.swift */; };
 		AAE88E1523A0C8AD00AEF058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */; };
 		AAE88E1723A0C8AD00AEF058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1623A0C8AD00AEF058 /* ViewController.swift */; };
 		AAE88E1A23A0C8AD00AEF058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE88E1823A0C8AD00AEF058 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		AA0A98E023A0E10B00822CDF /* GJAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJAPIService.swift; sourceTree = "<group>"; };
 		AA0A98E223A0E12100822CDF /* GJAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJAPIRequest.swift; sourceTree = "<group>"; };
+		AA0A98E523A0F42700822CDF /* GJContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContact.swift; sourceTree = "<group>"; };
+		AA0A98E723A0F49300822CDF /* GJNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJNetworkManager.swift; sourceTree = "<group>"; };
 		AAE88E1123A0C8AD00AEF058 /* GJContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE88E1623A0C8AD00AEF058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			path = APIManager;
 			sourceTree = "<group>";
 		};
+		AA0A98E423A0F40900822CDF /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98E523A0F42700822CDF /* GJContact.swift */,
+				AA0A98E723A0F49300822CDF /* GJNetworkManager.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
 		AAE88E0823A0C8AD00AEF058 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +123,7 @@
 		AAE88E1323A0C8AD00AEF058 /* GJContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A98E423A0F40900822CDF /* Handler */,
 				AA0A98DF23A0E0E800822CDF /* APIManager */,
 				AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */,
 				AAE88E1623A0C8AD00AEF058 /* ViewController.swift */,
@@ -274,6 +288,8 @@
 				AA0A98E323A0E12100822CDF /* GJAPIRequest.swift in Sources */,
 				AAE88E1523A0C8AD00AEF058 /* AppDelegate.swift in Sources */,
 				AA0A98E123A0E10B00822CDF /* GJAPIService.swift in Sources */,
+				AA0A98E623A0F42700822CDF /* GJContact.swift in Sources */,
+				AA0A98E823A0F49300822CDF /* GJNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
