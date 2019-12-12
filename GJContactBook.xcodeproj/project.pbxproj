@@ -15,6 +15,10 @@
 		AA0A98EC23A14C8000822CDF /* GJContactDetailsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0A98EA23A14C7F00822CDF /* GJContactDetailsResponse.json */; };
 		AA0A98F523A2716E00822CDF /* GJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98F423A2716E00822CDF /* GJBaseViewController.swift */; };
 		AA0A98F723A271D300822CDF /* GJImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98F623A271D300822CDF /* GJImageView.swift */; };
+		AA0A98FD23A2740E00822CDF /* GJContactListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98FC23A2740E00822CDF /* GJContactListingVC.swift */; };
+		AA0A98FF23A2742700822CDF /* GJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98FE23A2742700822CDF /* GJContactListVM.swift */; };
+		AA0A990123A2744600822CDF /* GJContactListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A990023A2744600822CDF /* GJContactListTableCell.swift */; };
+		AA0A990323A2746500822CDF /* GJContactListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A990223A2746500822CDF /* GJContactListRouter.swift */; };
 		AAE88E1523A0C8AD00AEF058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */; };
 		AAE88E1723A0C8AD00AEF058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1623A0C8AD00AEF058 /* ViewController.swift */; };
 		AAE88E1A23A0C8AD00AEF058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE88E1823A0C8AD00AEF058 /* Main.storyboard */; };
@@ -50,6 +54,10 @@
 		AA0A98EA23A14C7F00822CDF /* GJContactDetailsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GJContactDetailsResponse.json; sourceTree = "<group>"; };
 		AA0A98F423A2716E00822CDF /* GJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJBaseViewController.swift; sourceTree = "<group>"; };
 		AA0A98F623A271D300822CDF /* GJImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJImageView.swift; sourceTree = "<group>"; };
+		AA0A98FC23A2740E00822CDF /* GJContactListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactListingVC.swift; sourceTree = "<group>"; };
+		AA0A98FE23A2742700822CDF /* GJContactListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactListVM.swift; sourceTree = "<group>"; };
+		AA0A990023A2744600822CDF /* GJContactListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactListTableCell.swift; sourceTree = "<group>"; };
+		AA0A990223A2746500822CDF /* GJContactListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactListRouter.swift; sourceTree = "<group>"; };
 		AAE88E1123A0C8AD00AEF058 /* GJContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE88E1623A0C8AD00AEF058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +125,41 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		AA0A98F823A273CC00822CDF /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98F923A273CC00822CDF /* DetailStory */,
+				AA0A98FA23A273CC00822CDF /* EditStory */,
+				AA0A98FB23A273CC00822CDF /* ListingStory */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		AA0A98F923A273CC00822CDF /* DetailStory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailStory;
+			sourceTree = "<group>";
+		};
+		AA0A98FA23A273CC00822CDF /* EditStory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditStory;
+			sourceTree = "<group>";
+		};
+		AA0A98FB23A273CC00822CDF /* ListingStory */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98FC23A2740E00822CDF /* GJContactListingVC.swift */,
+				AA0A98FE23A2742700822CDF /* GJContactListVM.swift */,
+				AA0A990023A2744600822CDF /* GJContactListTableCell.swift */,
+				AA0A990223A2746500822CDF /* GJContactListRouter.swift */,
+			);
+			path = ListingStory;
+			sourceTree = "<group>";
+		};
 		AAE88E0823A0C8AD00AEF058 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +183,7 @@
 		AAE88E1323A0C8AD00AEF058 /* GJContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A98F823A273CC00822CDF /* Contacts */,
 				AA0A98ED23A2714000822CDF /* Utility */,
 				AA0A98E423A0F40900822CDF /* Handler */,
 				AA0A98DF23A0E0E800822CDF /* APIManager */,
@@ -306,6 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A990123A2744600822CDF /* GJContactListTableCell.swift in Sources */,
+				AA0A98FD23A2740E00822CDF /* GJContactListingVC.swift in Sources */,
+				AA0A990323A2746500822CDF /* GJContactListRouter.swift in Sources */,
 				AA0A98F723A271D300822CDF /* GJImageView.swift in Sources */,
 				AAE88E1723A0C8AD00AEF058 /* ViewController.swift in Sources */,
 				AA0A98E323A0E12100822CDF /* GJAPIRequest.swift in Sources */,
@@ -313,6 +360,7 @@
 				AA0A98E123A0E10B00822CDF /* GJAPIService.swift in Sources */,
 				AA0A98E623A0F42700822CDF /* GJContact.swift in Sources */,
 				AA0A98F523A2716E00822CDF /* GJBaseViewController.swift in Sources */,
+				AA0A98FF23A2742700822CDF /* GJContactListVM.swift in Sources */,
 				AA0A98E823A0F49300822CDF /* GJNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
