@@ -13,6 +13,8 @@
 		AA0A98E823A0F49300822CDF /* GJNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E723A0F49300822CDF /* GJNetworkManager.swift */; };
 		AA0A98EB23A14C8000822CDF /* GJContactListMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0A98E923A14C7F00822CDF /* GJContactListMockResponse.json */; };
 		AA0A98EC23A14C8000822CDF /* GJContactDetailsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0A98EA23A14C7F00822CDF /* GJContactDetailsResponse.json */; };
+		AA0A98F523A2716E00822CDF /* GJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98F423A2716E00822CDF /* GJBaseViewController.swift */; };
+		AA0A98F723A271D300822CDF /* GJImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98F623A271D300822CDF /* GJImageView.swift */; };
 		AAE88E1523A0C8AD00AEF058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */; };
 		AAE88E1723A0C8AD00AEF058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88E1623A0C8AD00AEF058 /* ViewController.swift */; };
 		AAE88E1A23A0C8AD00AEF058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE88E1823A0C8AD00AEF058 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		AA0A98E723A0F49300822CDF /* GJNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJNetworkManager.swift; sourceTree = "<group>"; };
 		AA0A98E923A14C7F00822CDF /* GJContactListMockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GJContactListMockResponse.json; sourceTree = "<group>"; };
 		AA0A98EA23A14C7F00822CDF /* GJContactDetailsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GJContactDetailsResponse.json; sourceTree = "<group>"; };
+		AA0A98F423A2716E00822CDF /* GJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJBaseViewController.swift; sourceTree = "<group>"; };
+		AA0A98F623A271D300822CDF /* GJImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJImageView.swift; sourceTree = "<group>"; };
 		AAE88E1123A0C8AD00AEF058 /* GJContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE88E1623A0C8AD00AEF058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 			path = Handler;
 			sourceTree = "<group>";
 		};
+		AA0A98ED23A2714000822CDF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98F423A2716E00822CDF /* GJBaseViewController.swift */,
+				AA0A98F623A271D300822CDF /* GJImageView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		AAE88E0823A0C8AD00AEF058 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 		AAE88E1323A0C8AD00AEF058 /* GJContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A98ED23A2714000822CDF /* Utility */,
 				AA0A98E423A0F40900822CDF /* Handler */,
 				AA0A98DF23A0E0E800822CDF /* APIManager */,
 				AAE88E1423A0C8AD00AEF058 /* AppDelegate.swift */,
@@ -292,11 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A98F723A271D300822CDF /* GJImageView.swift in Sources */,
 				AAE88E1723A0C8AD00AEF058 /* ViewController.swift in Sources */,
 				AA0A98E323A0E12100822CDF /* GJAPIRequest.swift in Sources */,
 				AAE88E1523A0C8AD00AEF058 /* AppDelegate.swift in Sources */,
 				AA0A98E123A0E10B00822CDF /* GJAPIService.swift in Sources */,
 				AA0A98E623A0F42700822CDF /* GJContact.swift in Sources */,
+				AA0A98F523A2716E00822CDF /* GJBaseViewController.swift in Sources */,
 				AA0A98E823A0F49300822CDF /* GJNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
