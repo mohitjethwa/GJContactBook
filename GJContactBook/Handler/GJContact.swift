@@ -27,3 +27,28 @@ struct GJContact: Codable, Comparable {
         case profilePic = "profile_pic"
     }
 }
+
+
+class GJContactDetails: Codable {
+    
+    let id : Int
+    let firstName: String
+    let lastName: String
+    let profilePic: String
+    let favorite: Bool
+    let email: String
+    let phoneNumber: String
+    let createdAt: String
+    let updatedAt: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id, favorite,email
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case profilePic = "profile_pic"
+        case phoneNumber = "phone_number"
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+    }
+    
+}

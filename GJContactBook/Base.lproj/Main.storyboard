@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SpE-Hl-zyI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SpE-Hl-zyI">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Contact-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ContactsListVC" id="BYZ-38-t0r" customClass="ContactsListVC" customModule="ContactsManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactsListVC" id="BYZ-38-t0r" customClass="GJContactListingVC" customModule="GJContactBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,14 +24,14 @@
                                 <color key="tintColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactTCell" rowHeight="64" id="dEP-cH-CK9" customClass="ContactTCell" customModule="ContactsManager" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GJContactListTableCell" rowHeight="64" id="dEP-cH-CK9" customClass="GJContactListTableCell" customModule="GJContactBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEP-cH-CK9" id="QsS-cu-ORM">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-4h-v8F" customClass="URLImageView" customModule="ContactsManager" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-4h-v8F" customClass="GJImageView" customModule="GJContactBook" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="12.5" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="LWW-o6-MWv"/>
@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
-        <!--Contact DetailVC-->
+        <!--Contact DetailsVC-->
         <scene sceneID="zeG-Co-QJb">
             <objects>
-                <viewController storyboardIdentifier="ContactDetailVC" id="Wf6-wu-FLp" customClass="ContactDetailVC" customModule="ContactsManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactDetailVC" id="Wf6-wu-FLp" customClass="GJContactDetailsVC" customModule="GJContactBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LRj-6t-sIO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-Zv-0ho" customClass="URLImageView" customModule="ContactsManager" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZpG-Zv-0ho" customClass="GJImageView" customModule="GJContactBook" customModuleProvider="target">
                                             <rect key="frame" x="143.5" y="84" width="127" height="127"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="ZpG-Zv-0ho" secondAttribute="height" multiplier="1:1" id="HC6-Zo-5E4"/>
@@ -294,7 +294,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactDetailsCell" rowHeight="56" id="jBF-Lw-cZr" customClass="ContactDetailsCell" customModule="ContactsManager" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GJContactDetailsTableCell" rowHeight="56" id="jBF-Lw-cZr" customClass="GJContactDetailsTableCell" customModule="GJContactBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="378" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jBF-Lw-cZr" id="cYG-kh-FtV">
@@ -354,7 +354,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="callView" destination="KSh-qg-1Tb" id="qj5-dG-Pbo"/>
                         <outlet property="emailView" destination="h2A-cw-3p7" id="O9h-IF-e1h"/>
@@ -374,7 +373,7 @@
         <!--Edit ContactVC-->
         <scene sceneID="QBJ-ik-WFH">
             <objects>
-                <viewController storyboardIdentifier="EditContactVC" id="gqP-08-nCp" customClass="EditContactVC" customModule="ContactsManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditContactVC" id="gqP-08-nCp" customClass="GJEditContactVC" customModule="GJContactBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RcJ-yX-6pO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,7 +385,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_photo" translatesAutoresizingMaskIntoConstraints="NO" id="mMi-Wi-J1B" customClass="URLImageView" customModule="ContactsManager" customModuleProvider="target">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_photo" translatesAutoresizingMaskIntoConstraints="NO" id="mMi-Wi-J1B" customClass="GJImageView" customModule="GJContactBook" customModuleProvider="target">
                                             <rect key="frame" x="143.5" y="58" width="127" height="127"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="mMi-Wi-J1B" secondAttribute="height" multiplier="1:1" id="D7Z-cl-Pmu"/>
@@ -426,7 +425,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EditContactTableViewCell" rowHeight="56" id="5T0-Za-qRe" customClass="EditContactTableViewCell" customModule="ContactsManager" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GJEditContactTableCell" rowHeight="56" id="5T0-Za-qRe" customClass="GJEditContactTableCell" customModule="GJContactBook" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="279" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5T0-Za-qRe" id="u0I-tL-qtD">
@@ -494,7 +493,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="headerView" destination="wYJ-gC-Ztp" id="1MZ-bo-UpK"/>
                         <outlet property="profileImageView" destination="mMi-Wi-J1B" id="FEV-AQ-Y3m"/>

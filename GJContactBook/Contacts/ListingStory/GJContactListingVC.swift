@@ -60,7 +60,7 @@ extension GJContactListingVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "GJContactTCell") as? GJContactListTableCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "GJContactListTableCell") as? GJContactListTableCell {
             cell.cellContact = viewModel.item(indexPath: indexPath)
             return cell
         }
