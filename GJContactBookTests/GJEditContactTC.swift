@@ -29,7 +29,7 @@ class GJEditContactTC: XCTestCase {
     func testAddContact() {
         
         let viewModel = GJEditContactVM(contact: nil, apiManager: self.serviceManager!)
-        viewModel.updateData(cellType: .email, value: "babul@gmail.com")
+        viewModel.updateData(cellType: .email, value: "mohit@gmail.com")
         viewModel.updateData(cellType: .lastName, value: "ABC")
         viewModel.updateData(cellType: .firstName, value: "ABC")
         viewModel.updateData(cellType: .phoneNumber, value: "ABC")
