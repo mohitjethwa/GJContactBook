@@ -14,6 +14,11 @@
 		AA013DC623A3F2F400EFFF51 /* GJEditContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DC523A3F2F400EFFF51 /* GJEditContactTableCell.swift */; };
 		AA013DC823A3F36300EFFF51 /* GJEditContactVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DC723A3F36300EFFF51 /* GJEditContactVM.swift */; };
 		AA013DCA23A3F43100EFFF51 /* GJEditContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DC923A3F43100EFFF51 /* GJEditContactVC.swift */; };
+		AA013DCC23A40B4800EFFF51 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DCB23A40B4800EFFF51 /* MockAPIService.swift */; };
+		AA013DCE23A40C3800EFFF51 /* GJNetworkHanldlerTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DCD23A40C3800EFFF51 /* GJNetworkHanldlerTC.swift */; };
+		AA013DD023A40D2300EFFF51 /* GJContactListTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DCF23A40D2300EFFF51 /* GJContactListTC.swift */; };
+		AA013DD223A40D3600EFFF51 /* GJContactDetailsTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DD123A40D3600EFFF51 /* GJContactDetailsTC.swift */; };
+		AA013DD423A40D5100EFFF51 /* GJEditContactTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA013DD323A40D5100EFFF51 /* GJEditContactTC.swift */; };
 		AA0A98E123A0E10B00822CDF /* GJAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E023A0E10B00822CDF /* GJAPIService.swift */; };
 		AA0A98E323A0E12100822CDF /* GJAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E223A0E12100822CDF /* GJAPIRequest.swift */; };
 		AA0A98E623A0F42700822CDF /* GJContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98E523A0F42700822CDF /* GJContact.swift */; };
@@ -59,6 +64,11 @@
 		AA013DC523A3F2F400EFFF51 /* GJEditContactTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJEditContactTableCell.swift; sourceTree = "<group>"; };
 		AA013DC723A3F36300EFFF51 /* GJEditContactVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJEditContactVM.swift; sourceTree = "<group>"; };
 		AA013DC923A3F43100EFFF51 /* GJEditContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJEditContactVC.swift; sourceTree = "<group>"; };
+		AA013DCB23A40B4800EFFF51 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		AA013DCD23A40C3800EFFF51 /* GJNetworkHanldlerTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJNetworkHanldlerTC.swift; sourceTree = "<group>"; };
+		AA013DCF23A40D2300EFFF51 /* GJContactListTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactListTC.swift; sourceTree = "<group>"; };
+		AA013DD123A40D3600EFFF51 /* GJContactDetailsTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContactDetailsTC.swift; sourceTree = "<group>"; };
+		AA013DD323A40D5100EFFF51 /* GJEditContactTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJEditContactTC.swift; sourceTree = "<group>"; };
 		AA0A98E023A0E10B00822CDF /* GJAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJAPIService.swift; sourceTree = "<group>"; };
 		AA0A98E223A0E12100822CDF /* GJAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJAPIRequest.swift; sourceTree = "<group>"; };
 		AA0A98E523A0F42700822CDF /* GJContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJContact.swift; sourceTree = "<group>"; };
@@ -222,6 +232,11 @@
 				AA0A98E923A14C7F00822CDF /* GJContactListMockResponse.json */,
 				AAE88E2923A0C8AF00AEF058 /* GJContactBookTests.swift */,
 				AAE88E2B23A0C8AF00AEF058 /* Info.plist */,
+				AA013DCB23A40B4800EFFF51 /* MockAPIService.swift */,
+				AA013DCD23A40C3800EFFF51 /* GJNetworkHanldlerTC.swift */,
+				AA013DCF23A40D2300EFFF51 /* GJContactListTC.swift */,
+				AA013DD123A40D3600EFFF51 /* GJContactDetailsTC.swift */,
+				AA013DD323A40D5100EFFF51 /* GJEditContactTC.swift */,
 			);
 			path = GJContactBookTests;
 			sourceTree = "<group>";
@@ -393,7 +408,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA013DD423A40D5100EFFF51 /* GJEditContactTC.swift in Sources */,
+				AA013DD023A40D2300EFFF51 /* GJContactListTC.swift in Sources */,
+				AA013DCE23A40C3800EFFF51 /* GJNetworkHanldlerTC.swift in Sources */,
+				AA013DCC23A40B4800EFFF51 /* MockAPIService.swift in Sources */,
 				AAE88E2A23A0C8AF00AEF058 /* GJContactBookTests.swift in Sources */,
+				AA013DD223A40D3600EFFF51 /* GJContactDetailsTC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
